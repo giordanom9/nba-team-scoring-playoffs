@@ -80,7 +80,7 @@ WHERE team NOT LIKE '%*'
 
 -- 4a. Average points per game, playoff teams.
 
-SELECT AVG(pts)
+SELECT ROUND(AVG(pts), 2)
 FROM team_stats
 WHERE team LIKE '%*';
 
@@ -88,11 +88,11 @@ WHERE team LIKE '%*';
 
 -- 4b. Average points per game, non-playoff teams.
 
-SELECT AVG(pts)
+SELECT ROUND(AVG(pts), 2)
 FROM team_stats
 WHERE team NOT LIKE '%*'
   AND rk IS NOT NULL;
 -- Returns: 111.76
 
--- Gap: 3.87 points per game (~3.5%).
+-- Gap: 3.87 points per game (~3.46%).
 -- See README.md for interpretation and limitations.
