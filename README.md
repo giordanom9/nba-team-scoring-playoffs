@@ -38,7 +38,7 @@ non-destructive filtering — the source table was left unmodified.
 |---|---|---|
 | Playoff teams | 16 | 115.63 |
 | Non-playoff teams | 14 | 111.76 |
-| **Gap** | | **3.87 (3.5%)** |
+| **Gap** | | **3.87 (3.46%)** |
 
 Playoff teams do score more on average, but the relationship is weak.
 Atlanta averaged 118.2 without qualifying — higher than 11 of the 16
